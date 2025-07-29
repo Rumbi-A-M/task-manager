@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylessheet" href="style.css">
   <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-  <div class="container">
-    <h1>📝 Task Manager</h1>
 
-    <form id="task-form">
-      <input type="text" id="task-input" placeholder="Enter a task..." required />
-      <button type="submit">Add Task</button>
-    </form>
+  <h1>Task Manager</h1>
+  <input type="text" id="task-input" placeholder="Enter a task" />
+  <button id="task">Add Task</button>
 
-    <div class="filters">
-      <button data-filter="all">All</button>
-      <button data-filter="active">Active</button>
-      <button data-filter="completed">Completed</button>
-    </div>
-
-    <ul id="task-list"></ul>
+  <div class="filters" style="margin-top: 1rem;">
+    <button data-filter="all">All</button>
+    <button data-filter="active">Active</button>
+    <button data-filter="completed">Completed</button>
+    <button id="delete">Delete Completed</button>
   </div>
 
+  <ul id="Task"></ul>
+
   <script src="script.js"></script>
+  
+
 </body>
 </html>
